@@ -10,7 +10,7 @@ class AIMEE(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def AIsay(self, Voicename, message):
+    async def AIsay(self, *, text):
         """Should repeat voicename and the message"""
         # Your code will go here
-        await self.bot(Voicename + message )
+        await self.bot(text)
