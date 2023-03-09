@@ -4,14 +4,12 @@
 from redbot.core import commands
 
 class AIMEE(commands.Cog):
-    """My custom cog"""
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command()
-    async def AIsay(self, *, text):
-        """Should repeat voicename and the message"""
-        # Your code will go here
+    async def AIsay(ctx, *, text):
+        #Should repeat voicename and the message
         ## wait self.bot(text)
-        await ctx.send (text)
+        await ctx.send(text)
