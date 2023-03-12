@@ -13,3 +13,4 @@ class AIMEE(commands.Cog):
         #Should repeat voicename and the message
         ## wait self.bot(text)
         await ctx.send(text)
+        await ctx.send(ctx)
