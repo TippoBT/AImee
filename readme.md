@@ -17,6 +17,25 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+5. You will also need to install RedBot with this command
+```
+pip install git+{the repo url}
+```
+
+6. Make a file called `.env` and put the ElevenLabs API key in there like this
+```
+ELEVENLABS_API_KEY={the key}
+```
+
+7. In your terminal navigate to the aimee folder
+```
+cd .\aimee\
+```
+
+8. To run the program use
+```
+python aimee.py
+```
 
 
 ### Recommended - Built-in Downloader
