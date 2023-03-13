@@ -61,7 +61,9 @@ class AIMEE(commands.Cog):
         
 
         # Summon bitch-tits
-        PlayerControllerCommands.command_summon(ctx)
+        audio_controller = PlayerControllerCommands()
+
+        audio_controller.command_summon(ctx)
         # else:
         #     pass
 
