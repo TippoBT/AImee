@@ -1,1 +1,15 @@
-
+{
+    "name": "aimee",
+    "short": "Say cringe stuff with AI",
+    "description": "Text to speech using ElevenLabs",
+    "install_msg": "Use like this '-aisay Dave::Some sentance && Rachael::Some response",
+    "requirements": [
+        "numpy==1.24.2",
+        "sounddevice==0.4.6",
+        "soundfile==0.12.1",
+        "elevenlabslib==0.2.6",
+        "requests==2.28.2",
+        "python-dotenv==1.0.0"
+    ],
+    "type": "COG"
+}
