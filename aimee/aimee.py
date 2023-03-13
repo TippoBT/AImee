@@ -3,7 +3,7 @@
 
 import os
 from redbot.core import commands
-from redbot.cogs.audio.core.commands.controller import PlayerControllerCommands
+from redbot.cogs.audio import Audio
 from dotenv import load_dotenv
 from elevenlabslib import *
 import lavalink
@@ -42,7 +42,8 @@ class AIMEE(commands.Cog):
     
     # def 
 
-    @commands.command()
+    @commands.command(name='aisay')
+    @commands.guild_only()
     async def aisay(self, ctx, text):
         #Should repeat voicename and the message
         ## wait self.bot(text)
@@ -51,19 +52,23 @@ class AIMEE(commands.Cog):
 
         lines = text.split('&&')
 
+        # audio = Audio()
+        audio = self.bot.get_cog('Audio')
+        failed = await ctx.invoke(audio.command_summon)
+
         
         
 
         # if self.bot:
-        await ctx.send(text)
-        await ctx.send(ctx)
+        # await ctx.send(text)
+        # await ctx.send(ctx)
 
         
 
         # Summon bitch-tits
-        audio_controller = PlayerControllerCommands()
+        # audio_controller = PlayerControllerCommands()
 
-        audio_controller.command_summon(ctx)
+        # audio_controller.command_summon(ctx)
         # else:
         #     pass
 
